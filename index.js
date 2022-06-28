@@ -4,6 +4,7 @@
 // or innerHTML and a template string
 
 const myEmojis = ["👨‍💻", "⛷", "🍲","a"]
+const myEmojis = ["👨‍💻", "⛷", "🍲","a", "😇"]
 const emojiContainer = document.getElementById("emoji-container")
 const emojiInput = document.querySelector("#emoji-input")
 //const msgOut = document.querySelector("#message")
@@ -20,7 +21,7 @@ unshiftBtn.addEventListener("click",unshiftEmoji)
 popBtn.addEventListener("click", popEmoji)
 shiftBtn.addEventListener("click",shiftEmoji)
 
-function render(){
+const  render = () => {
     emojiContainer.innerHTML =""
 
     for (let i = 0; i < myEmojis.length; i++) {
